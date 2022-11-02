@@ -1,0 +1,174 @@
+*{
+box-sizing: border-box;
+margin: 0;
+font-family: 'Arial';
+}
+
+a{text-decoration: none; color: black;}
+
+    
+.contener{
+    height: 1300px;
+    margin: 0;
+    background-color: rgb(34, 34, 34);
+}
+
+.baner{
+    background-color: black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    margin-bottom: 10px;
+}       
+    .baner a p{
+        position: relative;
+        animation: lata 4s ease infinite;
+        animation-delay: 1s;
+        text-align: center;
+        padding: 80px;
+        font-size: 40px;
+        opacity: 0.7;
+        font-family: monospace;
+        color: white;
+    }
+        @keyframes lata {
+            0%{top: 0px; color: white;}
+            5%{top: 20px; color: yellow;}
+            25%{top: -22px; color: white;}
+            50%{top: 40px; color: white;}
+            75%{top: -52px; color: yellow;}
+            100%{top: 0px; color: white;}
+        } 
+
+            
+.menu{
+    background-color: black;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    height: 70px;
+    margin-bottom: 30px;
+}
+    .pmenu{
+        width: 60px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 60px;
+        border-radius: 30px;
+        border: solid 2px rgb(36, 35, 35);
+        background: transparent;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        transition: 1s;
+    }
+        .pmenu:hover{
+            color: yellow;
+            border: solid 2px yellow;
+            transition: 1s;
+            border-radius: 15px;
+            box-shadow: 0 0 14px #ffee10;
+            text-shadow: 0 0 6px #ffee10;
+        }
+            .pmenu:focus{
+                transform: scale(0.9);
+                border-radius: 30px;
+                transition: 1s;
+                box-shadow: 0 0 14px #ffee10;
+                text-shadow: 0 0 6px #ffee10;
+                color: yellow;
+                border: solid 2px yellow;
+            }
+.content{
+    display: none;
+    background: black;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ffee10;
+    color: white;
+    
+ 
+}
+
+#te{
+    font-size: 15px; 
+}
+
+.mapa, .info, .oferta{
+    display: none;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+        .zdj{
+            padding-left: 12%;
+            padding-right: 12%;
+        }
+            .tekstInfo{
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 0.9rem;
+                width: 70%;
+            }
+
+
+#mieszkanie{
+    padding: 10px;
+    border-bottom: solid 2px grey;
+}
+
+.am{
+    color: yellow;
+    padding: 5px;
+    border-radius: 30px;
+    border: solid 2px rgb(36, 35, 35);
+    background: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+    .am:hover{
+        color: yellow;
+        border: solid 2px yellow;
+        transition: 1s;
+        border-radius: 15px;
+        box-shadow: 0 0 14px #ffee10;
+        text-shadow: 0 0 6px #ffee10;
+    }
+        .am:active{
+            transform: scale(0.9);
+            border-radius: 30px;
+            transition: 1s;
+            box-shadow: 0 0 14px #ffee10;
+            text-shadow: 0 0 6px #ffee10;
+            color: yellow;
+            border: solid 2px yellow;
+        }
+
+        .kontakt{
+            display: none;
+            text-align: center;
+            padding-left: 14%;
+            padding-right: 14%;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+            gap: 5px;
+        }   
+            #ko{
+                font-size: 20px;
+                font-weight: bold;
+            }
